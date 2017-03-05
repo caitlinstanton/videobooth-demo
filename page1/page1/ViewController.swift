@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var participationForm: UITextView!
     var agreementCheckBox: UIButton!
     var nameTextField: UITextField!
+    var continueButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
         checkBoxLabel.text = "I have fully read and understood the agreement above"
         checkBoxLabel.lineBreakMode = .byWordWrapping // or NSLineBreakMode.ByWordWrapping
         checkBoxLabel.numberOfLines = 0
+        checkBoxLabel.textAlignment = .center
         view.addSubview(checkBoxLabel)
         
         let nameLabel = UILabel(frame: CGRect(x:30, y:450, width:80, height:30))
@@ -57,6 +59,10 @@ class ViewController: UIViewController {
         nameTextField.layer.borderWidth = 2.0
         view.addSubview(nameTextField)
         
+        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:550, width:100, height:20))
+        continueButton.setTitle("Continue", for: .normal)
+        continueButton.backgroundColor = UIColor.blue
+        view.addSubview(continueButton)
     }
     
     /*
