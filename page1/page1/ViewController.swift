@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     
     func addUIElements() {
         participationForm = UITextView(frame: CGRect(x:30, y:30, width:SCREENSIZE.width - 60, height:300))
-        participationForm.backgroundColor = UIColor.red
+        participationForm.layer.borderColor = UIColor.black.cgColor
+        participationForm.backgroundColor = UIColor.gray
         participationForm.isUserInteractionEnabled = false
         view.addSubview(participationForm)
         
