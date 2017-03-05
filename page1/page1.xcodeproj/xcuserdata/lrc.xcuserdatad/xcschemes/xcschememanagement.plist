@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>videobooth-page1.xcscheme</key>
+		<key>page1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21018EB21E6CBC77007FA39D</key>
+		<key>21018ED21E6CD501007FA39D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

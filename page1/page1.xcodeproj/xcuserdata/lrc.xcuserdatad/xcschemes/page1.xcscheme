@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "21018EB21E6CBC77007FA39D"
-               BuildableName = "videobooth-page1.app"
-               BlueprintName = "videobooth-page1"
-               ReferencedContainer = "container:videobooth-page1.xcodeproj">
+               BlueprintIdentifier = "21018ED21E6CD501007FA39D"
+               BuildableName = "page1.app"
+               BlueprintName = "page1"
+               ReferencedContainer = "container:page1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21018EB21E6CBC77007FA39D"
-            BuildableName = "videobooth-page1.app"
-            BlueprintName = "videobooth-page1"
-            ReferencedContainer = "container:videobooth-page1.xcodeproj">
+            BlueprintIdentifier = "21018ED21E6CD501007FA39D"
+            BuildableName = "page1.app"
+            BlueprintName = "page1"
+            ReferencedContainer = "container:page1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21018EB21E6CBC77007FA39D"
-            BuildableName = "videobooth-page1.app"
-            BlueprintName = "videobooth-page1"
-            ReferencedContainer = "container:videobooth-page1.xcodeproj">
+            BlueprintIdentifier = "21018ED21E6CD501007FA39D"
+            BuildableName = "page1.app"
+            BlueprintName = "page1"
+            ReferencedContainer = "container:page1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21018EB21E6CBC77007FA39D"
-            BuildableName = "videobooth-page1.app"
-            BlueprintName = "videobooth-page1"
-            ReferencedContainer = "container:videobooth-page1.xcodeproj">
+            BlueprintIdentifier = "21018ED21E6CD501007FA39D"
+            BuildableName = "page1.app"
+            BlueprintName = "page1"
+            ReferencedContainer = "container:page1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

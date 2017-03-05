@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:videobooth-page1.xcodeproj">
+      location = "self:page1.xcodeproj">
    </FileRef>
 </Workspace>

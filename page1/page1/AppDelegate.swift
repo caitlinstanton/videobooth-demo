@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  videobooth-page1
+//  page1
 //
 //  Created by lrc on 3/5/17.
 //  Copyright © 2017 lrc. All rights reserved.
