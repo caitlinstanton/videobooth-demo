@@ -33,7 +33,7 @@ class FirstViewController: UIViewController {
     
     func addUIElements() {
         welcomeLabel = UILabel(frame: CGRect(x:30, y:380, width:SCREENSIZE.width-60, height:60))
-        welcomeLabel.text = NSLocalizedString("welcome_message", comment: "")
+        welcomeLabel.text = NSLocalizedString("Hi and welcome to Videobooth!", comment: "welcome message")
         welcomeLabel.lineBreakMode = .byWordWrapping // or NSLineBreakMode.ByWordWrapping
         welcomeLabel.numberOfLines = 0
         welcomeLabel.textAlignment = .center
