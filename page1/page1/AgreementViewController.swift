@@ -17,6 +17,8 @@ class AgreementViewController: UIViewController {
     var nameLabel: UILabel!
     var nameTextField: UITextField!
     var continueButton: UIButton!
+    var emailLabel: UILabel!
+    var emailTextField: UITextField!
 
     
     override func viewDidLoad() {
@@ -65,19 +67,40 @@ class AgreementViewController: UIViewController {
         nameTextField.isHidden = true
         view.addSubview(nameTextField)
         
-        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:550, width:100, height:20))
+        emailLabel = UILabel(frame: CGRect(x:30, y:525, width:80, height:30))
+        emailLabel.text = "Email"
+        emailLabel.isHidden = true
+        view.addSubview(emailLabel)
+        
+        emailTextField = UITextField(frame: CGRect(x:120, y:525, width:SCREENSIZE.width-160, height:30))
+        emailTextField.layer.cornerRadius = 2.0
+        emailTextField.layer.masksToBounds = true
+        emailTextField.layer.borderColor = UIColor.gray.cgColor
+        emailTextField.layer.borderWidth = 2.0
+        emailTextField.isHidden = true
+        view.addSubview(emailTextField)
+        
+        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:600, width:100, height:20))
         continueButton.setTitle("Continue", for: .normal)
         continueButton.backgroundColor = UIColor.blue
         continueButton.isHidden = true
+        continueButton.addTarget(self, action: #selector(displayVideoViewControllerModally), for: .touchUpInside)
         view.addSubview(continueButton)
     }
     
     func makeSignatureAppear(){
-        instructionLabel.text = "Enter your full name to confirm and continue"
+        instructionLabel.text = "Enter your full name and email to confirm and continue"
         agreementCheckBox.isHidden = true
         nameLabel.isHidden = false
         nameTextField.isHidden = false
         continueButton.isHidden = false
+        emailTextField.isHidden = false
+        emailLabel.isHidden = false
+    }
+    
+    func displayVideoViewControllerModally() {
+        let videoViewController = VideoViewController()
+        present(videoViewController, animated: true, completion: nil)
     }
     
     
