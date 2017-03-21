@@ -54,12 +54,12 @@ class AgreementViewController: UIViewController {
         agreementCheckBox.addTarget(self, action: #selector(makeSignatureAppear), for: .touchUpInside)
         view.addSubview(agreementCheckBox)
         
-        nameLabel = UILabel(frame: CGRect(x:30, y:450, width:80, height:30))
+        nameLabel = UILabel(frame: CGRect(x:30, y:300, width:80, height:30))
         nameLabel.text = "Full Name"
         nameLabel.isHidden = true
         view.addSubview(nameLabel)
         
-        nameTextField = UITextField(frame: CGRect(x:120, y:450, width:SCREENSIZE.width-160, height:30))
+        nameTextField = UITextField(frame: CGRect(x:120, y:300, width:SCREENSIZE.width-160, height:30))
         nameTextField.layer.cornerRadius = 2.0
         nameTextField.layer.masksToBounds = true
         nameTextField.layer.borderColor = UIColor.gray.cgColor
@@ -67,12 +67,12 @@ class AgreementViewController: UIViewController {
         nameTextField.isHidden = true
         view.addSubview(nameTextField)
         
-        emailLabel = UILabel(frame: CGRect(x:30, y:525, width:80, height:30))
+        emailLabel = UILabel(frame: CGRect(x:30, y:335, width:80, height:30))
         emailLabel.text = "Email"
         emailLabel.isHidden = true
         view.addSubview(emailLabel)
         
-        emailTextField = UITextField(frame: CGRect(x:120, y:525, width:SCREENSIZE.width-160, height:30))
+        emailTextField = UITextField(frame: CGRect(x:335, y:525, width:SCREENSIZE.width-160, height:30))
         emailTextField.layer.cornerRadius = 2.0
         emailTextField.layer.masksToBounds = true
         emailTextField.layer.borderColor = UIColor.gray.cgColor
@@ -80,7 +80,7 @@ class AgreementViewController: UIViewController {
         emailTextField.isHidden = true
         view.addSubview(emailTextField)
         
-        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:600, width:100, height:20))
+        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:400, width:100, height:20))
         continueButton.setTitle("Continue", for: .normal)
         continueButton.backgroundColor = UIColor.blue
         continueButton.isHidden = true
