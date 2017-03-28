@@ -99,7 +99,7 @@
 				TargetAttributes = {
 					21018ED21E6CD501007FA39D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8JH3U9GD55;
+						DevelopmentTeam = 652VFE8RSZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -257,10 +257,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8JH3U9GD55;
+				DEVELOPMENT_TEAM = 652VFE8RSZ;
 				INFOPLIST_FILE = page1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lrc.page1;
+				PRODUCT_BUNDLE_IDENTIFIER = videobooth.page1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,10 +270,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8JH3U9GD55;
+				DEVELOPMENT_TEAM = 652VFE8RSZ;
 				INFOPLIST_FILE = page1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lrc.page1;
+				PRODUCT_BUNDLE_IDENTIFIER = videobooth.page1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

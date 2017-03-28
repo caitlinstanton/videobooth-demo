@@ -9,7 +9,7 @@
 import UIKit
 import MobileCoreServices
 
-class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class VideoViewController: UIViewController {
     
     private let SCREENSIZE = UIScreen.main.bounds
     var videoView: UIImageView!
@@ -17,15 +17,8 @@ class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     var stopButton: UIButton!
     //var submitButton: UIButton
     
-    let picker = UIImagePickerController()
-    var pickedImagePath: URL?
-    var pickedImageData: Data?
-    var localPath: String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        picker.allowsEditing = false
-        //submitButton.addTarget(self, action: #selector(PhotoController.submitPhoto(_:)), for: UIControlEvents.touchUpInside)
         view.backgroundColor = .white
         addElements()
     }
@@ -37,7 +30,7 @@ class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         recordButton = UIButton(frame: CGRect(x:20, y: SCREENSIZE.height - 80, width: SCREENSIZE.width/3.0, height: 50))
         recordButton.setTitle("Record", for: .normal)
         recordButton.backgroundColor = UIColor.green
-        recordButton.addTarget(self, action: #selector(cameraAccessAction(_:)), for: .touchUpInside)
+        recordButton.addTarget(self, action: #selector(record), for: .touchUpInside)
         view.addSubview(recordButton)
         
         stopButton = UIButton(frame: CGRect(x: SCREENSIZE.width - (SCREENSIZE.width/3.0+20), y: SCREENSIZE.height - 80, width: SCREENSIZE.width/3.0, height: 50))
@@ -47,59 +40,57 @@ class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         view.addSubview(stopButton)
         
     }
-
-    func cameraAccessAction(_ sender: UIButton) {
-        picker.delegate = self
-        //picker.sourceType = .camera
-        
-        picker.cameraDevice=UIImagePickerControllerCameraDeviceFront;
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        present(picker, animated: true, completion: nil)
-    }
     
-    func submitPhoto(_ sender: UIButton) {
-        guard let path = localPath else {
-            return
-        }
-
+    func record(_ sender: AnyObject) {
+        startCameraFromViewController(self, withDelegate: self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate)
     }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard var image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-            return
-        }
-        image = self.imageWithImage(image, scaledToSize: CGSize(width: 300, height: 500))
-        videoView.image = image
         
-        pickedImageData = UIImagePNGRepresentation(videoView.image!)
-        
-        let documentDirectory: NSString = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
-        
-        let imageName = "temp"
-        let imagePath = documentDirectory.appendingPathComponent(imageName)
-        
-        if let data = UIImageJPEGRepresentation(image, 80) {
-            try? data.write(to: URL(fileURLWithPath: imagePath), options: [.atomic])
+    func startCameraFromViewController(_ viewController: UIViewController, withDelegate delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> Bool {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) == false {
+            return false
         }
         
-        localPath = imagePath
-        
-        dismiss(animated: true, completion: {
+        let cameraController = UIImagePickerController()
+        cameraController.sourceType = .camera
+        cameraController.mediaTypes = [kUTTypeMovie as NSString as String]
+        cameraController.allowsEditing = false
+        cameraController.delegate = delegate
             
-        })
+        present(cameraController, animated: true, completion: nil)
+        return true
+    }
+        
+    func video(_ videoPath: NSString, didFinishSavingWithError error: NSError?, contextInfo info: AnyObject) {
+        var title = "Success"
+        var message = "Video was saved"
+        if let _ = error {
+            title = "Error"
+            message = "Video failed to save"
+        }
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+}
+    
+    // MARK: - UIImagePickerControllerDelegate
+    
+extension VideoViewController: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
         dismiss(animated: true, completion: nil)
+        // Handle a movie capture
+        if mediaType == kUTTypeMovie {
+            //guard let path = (info[UIImagePickerControllerMediaURL] as! URL).path else { return }
+            //if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(path) {
+            //UISaveVideoAtPathToSavedPhotosAlbum(path, self, #selector(RecordVideoViewController.video(_:didFinishSavingWithError:contextInfo:)), nil)
+            //}
+        }
     }
+}
     
-    func imageWithImage(_ image:UIImage, scaledToSize newSize:CGSize) -> UIImage{
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0);
-        image.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
-        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return newImage
-    }
-    
+// MARK: - UINavigationControllerDelegate
 
+extension  VideoViewController: UINavigationControllerDelegate {
 }
