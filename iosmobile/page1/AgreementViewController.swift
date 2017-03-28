@@ -41,25 +41,25 @@ class AgreementViewController: UIViewController {
         participationForm.isScrollEnabled = true
         view.addSubview(participationForm)
         
-        instructionLabel = UILabel(frame: CGRect(x:30, y:380, width:SCREENSIZE.width-60, height:60))
+        instructionLabel = UILabel(frame: CGRect(x:participationForm.frame.origin.x, y:participationForm.frame.origin.y + participationForm.frame.height, width:SCREENSIZE.width-60, height:60))
         instructionLabel.text = "I have fully read and understood the agreement above"
         instructionLabel.lineBreakMode = .byWordWrapping // or NSLineBreakMode.ByWordWrapping
         instructionLabel.numberOfLines = 0
         instructionLabel.textAlignment = .center
         view.addSubview(instructionLabel)
         
-        agreementCheckBox = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:450, width:100, height:20))
+        agreementCheckBox = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:instructionLabel.frame.origin.y + instructionLabel.frame.height + 10, width:100, height:50))
         agreementCheckBox.setTitle("I Agree", for: .normal)
         agreementCheckBox.backgroundColor = UIColor.blue
         agreementCheckBox.addTarget(self, action: #selector(makeSignatureAppear), for: .touchUpInside)
         view.addSubview(agreementCheckBox)
         
-        nameLabel = UILabel(frame: CGRect(x:30, y:300, width:80, height:30))
+        nameLabel = UILabel(frame: CGRect(x:participationForm.frame.origin.x, y:instructionLabel.frame.origin.y + instructionLabel.frame.height + 10, width:80, height:30))
         nameLabel.text = "Full Name"
         nameLabel.isHidden = true
         view.addSubview(nameLabel)
         
-        nameTextField = UITextField(frame: CGRect(x:120, y:300, width:SCREENSIZE.width-160, height:30))
+        nameTextField = UITextField(frame: CGRect(x:nameLabel.frame.origin.x + nameLabel.frame.width, y:instructionLabel.frame.origin.y + instructionLabel.frame.height + 10, width:SCREENSIZE.width-160, height:30))
         nameTextField.layer.cornerRadius = 2.0
         nameTextField.layer.masksToBounds = true
         nameTextField.layer.borderColor = UIColor.gray.cgColor
@@ -67,12 +67,12 @@ class AgreementViewController: UIViewController {
         nameTextField.isHidden = true
         view.addSubview(nameTextField)
         
-        emailLabel = UILabel(frame: CGRect(x:30, y:335, width:80, height:30))
+        emailLabel = UILabel(frame: CGRect(x:participationForm.frame.origin.x, y:nameLabel.frame.origin.y + nameLabel.frame.height + 5, width:80, height:30))
         emailLabel.text = "Email"
         emailLabel.isHidden = true
         view.addSubview(emailLabel)
         
-        emailTextField = UITextField(frame: CGRect(x:335, y:525, width:SCREENSIZE.width-160, height:30))
+        emailTextField = UITextField(frame: CGRect(x:emailLabel.frame.origin.x + emailLabel.frame.width, y:nameLabel.frame.origin.y + nameLabel.frame.height + 5, width:SCREENSIZE.width-160, height:30))
         emailTextField.layer.cornerRadius = 2.0
         emailTextField.layer.masksToBounds = true
         emailTextField.layer.borderColor = UIColor.gray.cgColor
@@ -80,7 +80,7 @@ class AgreementViewController: UIViewController {
         emailTextField.isHidden = true
         view.addSubview(emailTextField)
         
-        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:400, width:100, height:20))
+        continueButton = UIButton(frame: CGRect(x:SCREENSIZE.width/2-50, y:emailLabel.frame.origin.y + emailLabel.frame.height + 10, width:100, height:50))
         continueButton.setTitle("Continue", for: .normal)
         continueButton.backgroundColor = UIColor.blue
         continueButton.isHidden = true
@@ -90,6 +90,15 @@ class AgreementViewController: UIViewController {
     
     func makeSignatureAppear(){
         instructionLabel.text = "Enter your full name and email to confirm and continue"
+        
+        instructionLabel.frame.origin.y = 50
+        nameLabel.frame.origin.y = instructionLabel.frame.origin.y + instructionLabel.frame.height + 10
+        nameTextField.frame.origin.y = instructionLabel.frame.origin.y + instructionLabel.frame.height + 10
+        emailLabel.frame.origin.y = nameLabel.frame.origin.y + nameLabel.frame.height + 5
+        emailTextField.frame.origin.y = nameLabel.frame.origin.y + nameLabel.frame.height + 5
+        continueButton.frame.origin.y = emailLabel.frame.origin.y + emailLabel.frame.height + 10
+        
+        participationForm.isHidden = true
         agreementCheckBox.isHidden = true
         nameLabel.isHidden = false
         nameTextField.isHidden = false
