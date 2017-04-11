@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>videobooth.xcscheme</key>
+		<key>macos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21050CD11E81B656008692AB</key>
+		<key>8CEAD87E1E9D4DEE009FA5F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

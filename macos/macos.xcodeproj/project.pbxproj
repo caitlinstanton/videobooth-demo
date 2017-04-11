@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21050CD61E81B657008692AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21050CD51E81B657008692AB /* AppDelegate.swift */; };
-		21050CD81E81B657008692AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21050CD71E81B657008692AB /* ViewController.swift */; };
-		21050CDA1E81B657008692AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21050CD91E81B657008692AB /* Assets.xcassets */; };
+		8CEAD8831E9D4DEE009FA5F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAD8821E9D4DEE009FA5F5 /* AppDelegate.swift */; };
+		8CEAD8851E9D4DEE009FA5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD8841E9D4DEE009FA5F5 /* Assets.xcassets */; };
+		8CEAD8881E9D4DEE009FA5F5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD8861E9D4DEE009FA5F5 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		21050CD21E81B657008692AB /* videobooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videobooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21050CD51E81B657008692AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21050CD71E81B657008692AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21050CD91E81B657008692AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		21050CDE1E81B657008692AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CEAD87F1E9D4DEE009FA5F5 /* macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEAD8821E9D4DEE009FA5F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CEAD8841E9D4DEE009FA5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CEAD8871E9D4DEE009FA5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8CEAD8891E9D4DEF009FA5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21050CCF1E81B656008692AB /* Frameworks */ = {
+		8CEAD87C1E9D4DEE009FA5F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,70 +31,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21050CC91E81B656008692AB = {
+		8CEAD8761E9D4DEE009FA5F5 = {
 			isa = PBXGroup;
 			children = (
-				21050CD41E81B657008692AB /* videobooth */,
-				21050CD31E81B657008692AB /* Products */,
+				8CEAD8811E9D4DEE009FA5F5 /* macos */,
+				8CEAD8801E9D4DEE009FA5F5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21050CD31E81B657008692AB /* Products */ = {
+		8CEAD8801E9D4DEE009FA5F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21050CD21E81B657008692AB /* videobooth.app */,
+				8CEAD87F1E9D4DEE009FA5F5 /* macos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21050CD41E81B657008692AB /* videobooth */ = {
+		8CEAD8811E9D4DEE009FA5F5 /* macos */ = {
 			isa = PBXGroup;
 			children = (
-				21050CD51E81B657008692AB /* AppDelegate.swift */,
-				21050CD71E81B657008692AB /* ViewController.swift */,
-				21050CD91E81B657008692AB /* Assets.xcassets */,
-				21050CDE1E81B657008692AB /* Info.plist */,
+				8CEAD8821E9D4DEE009FA5F5 /* AppDelegate.swift */,
+				8CEAD8841E9D4DEE009FA5F5 /* Assets.xcassets */,
+				8CEAD8861E9D4DEE009FA5F5 /* MainMenu.xib */,
+				8CEAD8891E9D4DEF009FA5F5 /* Info.plist */,
 			);
-			path = videobooth;
+			path = macos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21050CD11E81B656008692AB /* videobooth */ = {
+		8CEAD87E1E9D4DEE009FA5F5 /* macos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21050CE11E81B657008692AB /* Build configuration list for PBXNativeTarget "videobooth" */;
+			buildConfigurationList = 8CEAD88C1E9D4DEF009FA5F5 /* Build configuration list for PBXNativeTarget "macos" */;
 			buildPhases = (
-				21050CCE1E81B656008692AB /* Sources */,
-				21050CCF1E81B656008692AB /* Frameworks */,
-				21050CD01E81B656008692AB /* Resources */,
+				8CEAD87B1E9D4DEE009FA5F5 /* Sources */,
+				8CEAD87C1E9D4DEE009FA5F5 /* Frameworks */,
+				8CEAD87D1E9D4DEE009FA5F5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = videobooth;
-			productName = videobooth;
-			productReference = 21050CD21E81B657008692AB /* videobooth.app */;
+			name = macos;
+			productName = macos;
+			productReference = 8CEAD87F1E9D4DEE009FA5F5 /* macos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21050CCA1E81B656008692AB /* Project object */ = {
+		8CEAD8771E9D4DEE009FA5F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = lrc;
+				ORGANIZATIONNAME = "Caitlin Stanton";
 				TargetAttributes = {
-					21050CD11E81B656008692AB = {
+					8CEAD87E1E9D4DEE009FA5F5 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 21050CCD1E81B656008692AB /* Build configuration list for PBXProject "videobooth" */;
+			buildConfigurationList = 8CEAD87A1E9D4DEE009FA5F5 /* Build configuration list for PBXProject "macos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -102,41 +102,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 21050CC91E81B656008692AB;
-			productRefGroup = 21050CD31E81B657008692AB /* Products */;
+			mainGroup = 8CEAD8761E9D4DEE009FA5F5;
+			productRefGroup = 8CEAD8801E9D4DEE009FA5F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21050CD11E81B656008692AB /* videobooth */,
+				8CEAD87E1E9D4DEE009FA5F5 /* macos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21050CD01E81B656008692AB /* Resources */ = {
+		8CEAD87D1E9D4DEE009FA5F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21050CDA1E81B657008692AB /* Assets.xcassets in Resources */,
+				8CEAD8851E9D4DEE009FA5F5 /* Assets.xcassets in Resources */,
+				8CEAD8881E9D4DEE009FA5F5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21050CCE1E81B656008692AB /* Sources */ = {
+		8CEAD87B1E9D4DEE009FA5F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21050CD81E81B657008692AB /* ViewController.swift in Sources */,
-				21050CD61E81B657008692AB /* AppDelegate.swift in Sources */,
+				8CEAD8831E9D4DEE009FA5F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8CEAD8861E9D4DEE009FA5F5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CEAD8871E9D4DEE009FA5F5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		21050CDF1E81B657008692AB /* Debug */ = {
+		8CEAD88A1E9D4DEF009FA5F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +196,7 @@
 			};
 			name = Debug;
 		};
-		21050CE01E81B657008692AB /* Release */ = {
+		8CEAD88B1E9D4DEF009FA5F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,27 +237,27 @@
 			};
 			name = Release;
 		};
-		21050CE21E81B657008692AB /* Debug */ = {
+		8CEAD88D1E9D4DEF009FA5F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = videobooth/Info.plist;
+				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lrc.videobooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlinstanton.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		21050CE31E81B657008692AB /* Release */ = {
+		8CEAD88E1E9D4DEF009FA5F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = videobooth/Info.plist;
+				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lrc.videobooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlinstanton.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -255,24 +266,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21050CCD1E81B656008692AB /* Build configuration list for PBXProject "videobooth" */ = {
+		8CEAD87A1E9D4DEE009FA5F5 /* Build configuration list for PBXProject "macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21050CDF1E81B657008692AB /* Debug */,
-				21050CE01E81B657008692AB /* Release */,
+				8CEAD88A1E9D4DEF009FA5F5 /* Debug */,
+				8CEAD88B1E9D4DEF009FA5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21050CE11E81B657008692AB /* Build configuration list for PBXNativeTarget "videobooth" */ = {
+		8CEAD88C1E9D4DEF009FA5F5 /* Build configuration list for PBXNativeTarget "macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21050CE21E81B657008692AB /* Debug */,
-				21050CE31E81B657008692AB /* Release */,
+				8CEAD88D1E9D4DEF009FA5F5 /* Debug */,
+				8CEAD88E1E9D4DEF009FA5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21050CCA1E81B656008692AB /* Project object */;
+	rootObject = 8CEAD8771E9D4DEE009FA5F5 /* Project object */;
 }

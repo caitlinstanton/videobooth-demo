@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "21050CD11E81B656008692AB"
-               BuildableName = "videobooth.app"
-               BlueprintName = "videobooth"
-               ReferencedContainer = "container:videobooth.xcodeproj">
+               BlueprintIdentifier = "8CEAD87E1E9D4DEE009FA5F5"
+               BuildableName = "macos.app"
+               BlueprintName = "macos"
+               ReferencedContainer = "container:macos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21050CD11E81B656008692AB"
-            BuildableName = "videobooth.app"
-            BlueprintName = "videobooth"
-            ReferencedContainer = "container:videobooth.xcodeproj">
+            BlueprintIdentifier = "8CEAD87E1E9D4DEE009FA5F5"
+            BuildableName = "macos.app"
+            BlueprintName = "macos"
+            ReferencedContainer = "container:macos.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21050CD11E81B656008692AB"
-            BuildableName = "videobooth.app"
-            BlueprintName = "videobooth"
-            ReferencedContainer = "container:videobooth.xcodeproj">
+            BlueprintIdentifier = "8CEAD87E1E9D4DEE009FA5F5"
+            BuildableName = "macos.app"
+            BlueprintName = "macos"
+            ReferencedContainer = "container:macos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21050CD11E81B656008692AB"
-            BuildableName = "videobooth.app"
-            BlueprintName = "videobooth"
-            ReferencedContainer = "container:videobooth.xcodeproj">
+            BlueprintIdentifier = "8CEAD87E1E9D4DEE009FA5F5"
+            BuildableName = "macos.app"
+            BlueprintName = "macos"
+            ReferencedContainer = "container:macos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
