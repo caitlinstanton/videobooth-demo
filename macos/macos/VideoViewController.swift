@@ -14,6 +14,9 @@ import QuartzCore
 
 class VideoViewController: NSViewController {
     
+    @IBOutlet weak var recordButton: NSButton!
+    @IBOutlet weak var submitButton: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

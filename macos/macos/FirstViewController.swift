@@ -14,5 +14,14 @@ class FirstViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
+    @IBOutlet weak var nextButton: NSButton!
+
+    @IBAction func presentAgreementViewModally(_ sender: NSButton) {
+        let agreementViewController = storyboard?.instantiateController(withIdentifier: "agreement") as! NSViewController
+        presentViewControllerAsSheet(agreementViewController)
+        let selfViewController = self
+        dismissViewController(selfViewController)
+    }
+
     
 }
