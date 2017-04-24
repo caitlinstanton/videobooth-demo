@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219185FD1EAD7DB30080649E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219185FC1EAD7DB30080649E /* ContainerViewController.swift */; };
 		8CEAD8C11E9D5B4D009FA5F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAD8C01E9D5B4D009FA5F5 /* AppDelegate.swift */; };
 		8CEAD8C51E9D5B4D009FA5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD8C41E9D5B4D009FA5F5 /* Assets.xcassets */; };
 		8CEAD8C81E9D5B4D009FA5F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD8C61E9D5B4D009FA5F5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219185FC1EAD7DB30080649E /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = ../ContainerViewController.swift; sourceTree = "<group>"; };
 		8CEAD8BD1E9D5B4D009FA5F5 /* macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEAD8C01E9D5B4D009FA5F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEAD8C41E9D5B4D009FA5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		8CEAD8BF1E9D5B4D009FA5F5 /* macos */ = {
 			isa = PBXGroup;
 			children = (
+				219185FC1EAD7DB30080649E /* ContainerViewController.swift */,
 				8CEAD8C01E9D5B4D009FA5F5 /* AppDelegate.swift */,
 				8CEAD8CF1E9D5B84009FA5F5 /* FirstViewController.swift */,
 				8CEAD8D01E9D5B84009FA5F5 /* FirstViewController.xib */,
@@ -152,6 +155,7 @@
 			files = (
 				8CEAD8D51E9D5C3D009FA5F5 /* AgreementViewController.swift in Sources */,
 				8CEAD8D11E9D5B84009FA5F5 /* FirstViewController.swift in Sources */,
+				219185FD1EAD7DB30080649E /* ContainerViewController.swift in Sources */,
 				8CEAD8D91E9D6500009FA5F5 /* VideoViewController.swift in Sources */,
 				8CEAD8C11E9D5B4D009FA5F5 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +310,7 @@
 				8CEAD8CE1E9D5B4D009FA5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
