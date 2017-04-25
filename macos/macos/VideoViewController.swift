@@ -4,7 +4,7 @@
 //
 //  Created by Caitlin Stanton on 4/11/17.
 //  Copyright © 2017 Caitlin Stanton. All rights reserved.
-//
+//  https://www.raywenderlich.com/tag/avfoundation
 
 import Cocoa
 import AVFoundation
