@@ -26,7 +26,8 @@ class ViewController: NSViewController {
                 if((device as AnyObject).position == AVCaptureDevicePosition.back) {
                     captureDevice = device as? AVCaptureDevice
                     if captureDevice != nil {
-                        beginSession()
+                        //beginSession()
+                        print(devices)
                     }
                 }
             }
@@ -34,6 +35,9 @@ class ViewController: NSViewController {
         
     }
     
+    
+    
+    /*
     func beginSession() {
         var err : NSError? = nil
         captureSession.addInput(AVCaptureDeviceInput(device: captureDevice, error: &err))
@@ -71,5 +75,6 @@ class ViewController: NSViewController {
     func captureOutput(captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAtURL fileURL: NSURL!, fromConnections connections: [AnyObject]!) {
         return
     }
+ */
     
 }
