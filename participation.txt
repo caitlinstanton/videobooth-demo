@@ -1,7 +1,0 @@
-What to do for the participation agreement page:
-
-- Create UITextView, load agreement into it, allow for scrolling
-- Add functionality that checks to see entire UITextField was scrolled through, so as to ensure they "look" at agreement
-- Check box to indicate that they read agreement
-- Add UITextField for user signature
-- Add signature field

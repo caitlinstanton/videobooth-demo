@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>cameraAccess.xcscheme</key>
+		<key>videobooth-videopage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21F106971EB8F7E200608B10</key>
+		<key>21B5259E1E819CE90039FD87</key>
 		<dict>
 			<key>primary</key>
 			<true/>

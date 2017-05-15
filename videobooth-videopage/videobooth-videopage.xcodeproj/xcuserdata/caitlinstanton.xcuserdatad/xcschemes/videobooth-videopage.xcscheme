@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "21F106971EB8F7E200608B10"
-               BuildableName = "cameraAccess.app"
-               BlueprintName = "cameraAccess"
-               ReferencedContainer = "container:cameraAccess.xcodeproj">
+               BlueprintIdentifier = "21B5259E1E819CE90039FD87"
+               BuildableName = "videobooth-videopage.app"
+               BlueprintName = "videobooth-videopage"
+               ReferencedContainer = "container:videobooth-videopage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21F106971EB8F7E200608B10"
-            BuildableName = "cameraAccess.app"
-            BlueprintName = "cameraAccess"
-            ReferencedContainer = "container:cameraAccess.xcodeproj">
+            BlueprintIdentifier = "21B5259E1E819CE90039FD87"
+            BuildableName = "videobooth-videopage.app"
+            BlueprintName = "videobooth-videopage"
+            ReferencedContainer = "container:videobooth-videopage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21F106971EB8F7E200608B10"
-            BuildableName = "cameraAccess.app"
-            BlueprintName = "cameraAccess"
-            ReferencedContainer = "container:cameraAccess.xcodeproj">
+            BlueprintIdentifier = "21B5259E1E819CE90039FD87"
+            BuildableName = "videobooth-videopage.app"
+            BlueprintName = "videobooth-videopage"
+            ReferencedContainer = "container:videobooth-videopage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21F106971EB8F7E200608B10"
-            BuildableName = "cameraAccess.app"
-            BlueprintName = "cameraAccess"
-            ReferencedContainer = "container:cameraAccess.xcodeproj">
+            BlueprintIdentifier = "21B5259E1E819CE90039FD87"
+            BuildableName = "videobooth-videopage.app"
+            BlueprintName = "videobooth-videopage"
+            ReferencedContainer = "container:videobooth-videopage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
