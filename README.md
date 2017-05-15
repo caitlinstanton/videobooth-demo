@@ -1,6 +1,12 @@
 <h1>What does this repo contain</h1>
 Code and research code (stuff I didn't write) for the making of Videbooth, in both a OSX (Mac application) and iOS (iPhone) capacity.
 I ended up starting coding with the iPhone app, thinking that its functionality could translate well into OSX, but I was slightly mistaken. They are similar, but the syntax and functions necessary to run a Mac app are slightly different, and that's why I've had difficulty, particularly with the video function of the Mac application.
+iosmobile and macos are the (almost) finished versions of Video Booth. The other folders in these repo contain sample code for various functions: 
+- avfoundationtest, avcapture.playground -> using AVFoundation library to access and capture video from webcam
+- videobooth-videopage -> first attempt at accessing webcam for Mac application
+- VideoPlayRecord-Final -> code to record and play video from camera for iPhone application
+- Documentation -> user flow and design writeups/presentations from Erick, images for buttons, etc.
+
 
 <h1>iOS Application (iosmobile)</h1>
 <h2>What's been done</h2>
